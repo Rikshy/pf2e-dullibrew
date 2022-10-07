@@ -30,12 +30,12 @@ jobs:
       uses: ncipollo/release-action@v1
       with:
         allowUpdates: true # set this to false if you want to prevent updating existing releases
-        name: ${{ steps.get-version.outputs.version }}
+        name: ${{ github.event.release.tag_name }}
         draft: false
         prerelease: false
         token: ${{ secrets.GITHUB_TOKEN }}
-        artifacts: './module.json,./module.zip'
-        tag_name: ${{ github.event.release.tag_name }}
+        artifacts: './module.json, ./module.zip'
+        tag: ${{ github.event.release.tag_name }}
 
     # Update the 'latest' release
     - name: Create Release
@@ -48,5 +48,5 @@ jobs:
         draft: false
         prerelease: false
         token: ${{ secrets.GITHUB_TOKEN }}
-        artifacts: './module.json,./module.zip'
+        artifacts: './module.json, ./module.zip'
         tag: latest
