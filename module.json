@@ -1,0 +1,71 @@
+{
+  "name": "pf2e-dullibrew",
+  "title": "PF2e Dulli Homebrews",
+  "description": "Homebrew by a real Dulli.",
+  "version": "1.0",
+  "authors": [ {
+      "name": "Shyrik"
+    } 
+  ],
+  "compatibility": {
+    "minimum": "9",
+    "maximum": "10",
+    "verified": "10.286"
+  },
+  "relationships": {
+    "systems": [ {
+        "id": "pf2e",
+        "type": "system",
+        "manifest": "https://github.com/foundryvtt/pf2e/releases/download/latest/system.json",
+        "compatibility": {
+          "minimum": "4.0.0",
+          "maximum": "4.1.3"
+        }
+      }
+    ]
+  },
+  "flags": {
+    "pf2e-dullibrew": {
+      "pf2e-homebrew": {
+        "featTraits": {
+          "shardbearer": "Shardbearer"
+        },
+        "weaponTraits": {
+          "Shardbound": {
+            "label": "Shardbound",
+            "description": "A weapon with this trait can be affected by Shardbearer feats."
+          }
+        }
+      }
+    }
+  },
+  "packs": [
+    {
+      "label": "Dullibrew - Feats",
+      "type": "Item",
+      "name": "dullibrew-feats",
+      "path": "./packs/dullibrew-feats.db",
+      "system": "pf2e",
+      "private": false
+    },
+    {
+      "label": "Dullibrew - Actions",
+      "type": "Item",
+      "name": "dullibrew-actions",
+      "path": "./packs/dullibrew-actions.db",
+      "system": "pf2e",
+      "private": false
+    },
+    {
+      "label": "Dullibrew - Spells",
+      "type": "Item",
+      "name": "dullibrew-spells",
+      "path": "./packs/dullibrew-spells.db",
+      "system": "pf2e",
+      "private": false
+    }
+  ],
+  "url": "https://github.com/Rikshy/pf2e-dullibrew",
+  "manifest": "https://github.com/Rikshy/pf2e-dullibrew/releases/latest/download/module.json",
+  "download": "https://github.com/Rikshy/pf2e-dullibrew/releases/download/v1.0/module.zip"
+}
