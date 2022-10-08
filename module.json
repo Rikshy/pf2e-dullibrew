@@ -15,12 +15,7 @@
   "relationships": {
     "systems": [ {
         "id": "pf2e",
-        "type": "system",
-        "manifest": "https://github.com/foundryvtt/pf2e/releases/download/latest/system.json",
-        "compatibility": {
-          "minimum": "4.0.0",
-          "maximum": "4.1.3"
-        }
+        "type": "system"
       }
     ]
   },
