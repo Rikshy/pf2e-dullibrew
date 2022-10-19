@@ -2,20 +2,23 @@
   "id": "pf2e-dullibrew",
   "title": "PF2e Dulli Homebrews",
   "description": "Homebrew by a real Dulli.",
-  "version": "1.0",
-  "authors": [ {
-      "name": "Shyrik"
-    } 
+  "version": "v1.0a",
+  "authors": [
+    {
+      "name": "Shyrik",
+      "flags": {}
+    }
   ],
   "compatibility": {
     "minimum": "9",
-    "maximum": "10",
     "verified": "10.286"
   },
   "relationships": {
-    "systems": [ {
+    "systems": [
+      {
         "id": "pf2e",
-        "type": "system"
+        "type": "system",
+        "compatibility": {}
       }
     ]
   },
@@ -39,25 +42,28 @@
       "label": "Dullibrew - Feats",
       "type": "Item",
       "name": "dullibrew-feats",
-      "path": "./packs/dullibrew-feats.db",
+      "path": "packs/dullibrew-feats.db",
       "system": "pf2e",
-      "private": false
+      "private": false,
+      "flags": {}
     },
     {
       "label": "Dullibrew - Actions",
       "type": "Item",
       "name": "dullibrew-actions",
-      "path": "./packs/dullibrew-actions.db",
+      "path": "packs/dullibrew-actions.db",
       "system": "pf2e",
-      "private": false
+      "private": false,
+      "flags": {}
     },
     {
       "label": "Dullibrew - Spells",
       "type": "Item",
       "name": "dullibrew-spells",
-      "path": "./packs/dullibrew-spells.db",
+      "path": "packs/dullibrew-spells.db",
       "system": "pf2e",
-      "private": false
+      "private": false,
+      "flags": {}
     }
   ],
   "url": "https://github.com/Rikshy/pf2e-dullibrew",
